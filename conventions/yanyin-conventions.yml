@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.yanyin.tech/product/mega-open-platform
+summary: >-
+  Cross-cutting API semantics documented on the Yanyin Mega Open Platform
+  (开放平台) API gateway product page. No public OpenAPI is published; these are
+  the gateway conventions the provider advertises for its developer center.
+authentication:
+  styles:
+  - api_key
+  - oauth2_client_credentials
+  scope: per-tenant and per-application authorization
+  notes: Unified authentication (统一鉴权) enforced at the API gateway.
+idempotency:
+  supported: true
+  evidence: "API gateway advertises 幂等与重试 (idempotency and retry) as a core capability"
+  source: https://www.yanyin.tech/product/mega-open-platform#api-gateway
+request_signing:
+  supported: true
+  evidence: "请求签名 (request signing) enforced at the gateway"
+rate_limiting:
+  supported: true
+  evidence: "统一鉴权与限流 (unified auth and rate limiting) at the gateway"
+versioning:
+  supported: true
+  evidence: "版本与路由 (versioning and routing) managed by the gateway"
+ip_allowlist:
+  supported: true
+  evidence: "IP 白名单 (IP whitelist) supported at gateway and webhook layers"
+webhooks:
+  supported: true
+  signing: HMAC
+  key_rotation: true
+  delivery: exponential-backoff retry with event replay and target URL health checks
+  cross_ref: asyncapi/yanyin-webhooks.yml
+data_integration:
+  formats: [CSV, JSON]
+  features: [template validation, field mapping, scheduled/incremental sync, job monitoring]
+cross_references:
+  authentication: authentication/yanyin-authentication.yml
+  webhooks: asyncapi/yanyin-webhooks.yml

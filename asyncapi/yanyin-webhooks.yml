@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.yanyin.tech/product/mega-open-platform
+spec_type: Webhooks
+summary: >-
+  Yanyin Mega Open Platform advertises webhook callback management (Webhook
+  回调管理) for subscribing to business events. No public AsyncAPI document or
+  named event catalog is published; this captures the webhook delivery contract
+  the provider documents.
+webhooks:
+  subscription: subscribe to business events
+  signing: HMAC signature with key rotation
+  security:
+  - HMAC signing
+  - key rotation
+  - IP allowlist
+  - target URL health checks
+  delivery:
+    retry: exponential backoff
+    replay: supported (event replay)
+  events: []   # provider documents webhooks but publishes no named event catalog

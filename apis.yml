@@ -1,7 +1,32 @@
 aid: yanyin
-name: yanyin
-description: yanyin is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Yanyin Technology
+description: >-
+  Yanyin Technology (衍因科技) is a Shanghai-based biomedical AI company building
+  衍因智研云 (Yanyin Zhiyun), a digital research-collaboration platform for
+  life-sciences R&D. Its product suite spans an electronic lab notebook (Yan
+  Note), molecular biology tools (Yan Molecule), a LIMS (Yan LIMS), AI
+  literature and experiment assistants (Yan Research, Yan Reviewer, Yan
+  Advisor), and the enterprise AI MEGASphere platform, whose Mega Open Platform
+  exposes an API gateway (API Key and OAuth2 client-credentials authentication,
+  rate limiting, request signing, idempotency and retries, versioning), a
+  developer center with online docs, SDKs and a sandbox, and webhook callback
+  management with HMAC signing and event replay. Yanyin serves 80+ pharma
+  companies, 280+ research institutions and hospitals, and 430+ universities,
+  and holds ISO 9001, ISO 27001 and ISO 20000 certifications plus China MLPS
+  Level 3. Backed by Qiming Venture Partners.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.yanyin.tech/website2/apple-touch-icon.sxr5Uh9x.png
 url: https://raw.githubusercontent.com/api-evangelist/yanyin/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +36,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Biotechnology
+- Life Sciences
+- Artificial Intelligence
+- Research
+- Electronic Lab Notebook
+- LIMS
+- SaaS
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +55,46 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://yanyin.tech
+  url: https://www.yanyin.tech
+- type: DeveloperPortal
+  name: Mega Open Platform (Developer Center)
+  url: https://www.yanyin.tech/product/mega-open-platform
+- type: Documentation
+  name: Open Platform product documentation
+  url: https://www.yanyin.tech/product/mega-open-platform
+- type: Pricing
+  url: https://www.yanyin.tech/price
+- type: PrivacyPolicy
+  url: https://www.yanyin.tech/privacy
+- type: SignUp
+  url: https://app.yanyin.tech/register
+- type: Login
+  url: https://app.yanyin.tech/login
+- type: Blog
+  name: News
+  url: https://www.yanyin.tech/news
+- type: Support
+  name: Contact / Support
+  url: https://www.yanyin.tech/company#contact-us
+- type: Authentication
+  url: authentication/yanyin-authentication.yml
+- type: Conventions
+  url: conventions/yanyin-conventions.yml
+- type: Idempotency
+  url: conventions/yanyin-conventions.yml
+- type: Webhooks
+  url: asyncapi/yanyin-webhooks.yml
+- type: Conformance
+  url: conformance/yanyin-conformance.yml
+- type: Compliance
+  name: ISO 9001 / 27001 / 20000, MLPS Level 3
+  url: conformance/yanyin-conformance.yml
+- type: LLMsTxt
+  url: llms/yanyin-llms.txt
+- type: DomainSecurity
+  url: security/yanyin-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1

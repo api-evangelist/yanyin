@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.yanyin.tech/product/mega-open-platform
+docs: https://www.yanyin.tech/product/mega-open-platform#api-gateway
+summary:
+  types: [apiKey, oauth2]
+  oauth2_flows: [clientCredentials]
+  scope_model: per-tenant and per-application authorization
+schemes:
+- name: apiKey
+  type: apiKey
+  description: >-
+    API Key authentication issued and managed through the Yanyin Developer
+    Center (密钥与凭证管理). Enforced with request signing and IP allowlisting at the
+    API gateway.
+  sources: [https://www.yanyin.tech/product/mega-open-platform]
+- name: oauth2ClientCredentials
+  type: oauth2
+  scheme: clientCredentials
+  description: >-
+    OAuth2 Client Credentials flow for server-to-server application access,
+    advertised on the Mega Open Platform API gateway.
+  sources: [https://www.yanyin.tech/product/mega-open-platform]
+notes: >-
+  Derived from the provider's published Open Platform product page; the concrete
+  OpenAPI securitySchemes are not public (developer console is behind
+  app.yanyin.tech login).

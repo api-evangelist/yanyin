@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.yanyin.tech/company
+summary: >-
+  Certifications and cross-cutting standards Yanyin Technology publishes on its
+  corporate site, plus API-gateway conventions advertised on the Open Platform
+  product page.
+certifications:
+- id: iso-9001
+  conforms: true
+  evidence: "ISO 9001 quality management certification stated on company page"
+- id: iso-27001
+  conforms: true
+  evidence: "ISO 27001 information security certification stated on company page"
+- id: iso-20000
+  conforms: true
+  evidence: "ISO 20000 IT service management certification stated on company page"
+- id: mlps-level-3
+  conforms: true
+  evidence: "China MLPS (等保) Level 3 information security protection stated on company page"
+standards:
+- id: oauth2
+  conforms: true
+  evidence: "Open Platform API gateway advertises OAuth2 client-credentials auth"
+- id: idempotency
+  conforms: true
+  evidence: "API gateway advertises idempotency and retry (幂等与重试)"
+- id: webhook-hmac
+  conforms: true
+  evidence: "Webhook callback management advertises HMAC signing and key rotation"

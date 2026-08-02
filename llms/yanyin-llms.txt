@@ -1,0 +1,33 @@
+# Yanyin Technology (衍因科技)
+
+> Shanghai-based biomedical AI company building 衍因智研云 (Yanyin Zhiyun), a digital research-collaboration platform for life-sciences R&D. Its enterprise AI MEGASphere suite includes a Mega Open Platform with an API gateway (API Key and OAuth2 client-credentials auth, rate limiting, request signing, idempotency, versioning), a developer center (online docs, SDKs, sandbox), and webhook callback management with HMAC signing. Backed by Qiming Venture Partners. Holds ISO 9001, ISO 27001, ISO 20000 and China MLPS Level 3.
+
+## Products
+- [Mega Open Platform (开放平台)](https://www.yanyin.tech/product/mega-open-platform): API gateway, developer center, data integration center, webhook callbacks
+- [Yan Note (电子实验记录)](https://www.yanyin.tech/product/yan-note): electronic lab notebook
+- [Yan Molecule (分子生物学工具)](https://www.yanyin.tech/product/yan-molecule): molecular cloning, primer design, sequence editing, biobank
+- [Yan LIMS](https://www.yanyin.tech/product/yan-lims): sample, material and inspection management
+- [Yan Research](https://www.yanyin.tech/product/yan-research): AI literature interpretation, experiment summary, CRISPR design
+- [Yan Reviewer](https://www.yanyin.tech/product/yan-reviewer): AI review and IND application assistance
+- [Yan Advisor](https://www.yanyin.tech/product/yan-advisor): AI research advisor
+
+## Solutions
+- [Cell therapy](https://www.yanyin.tech/solutions/cell-therapy-solutions)
+- [Gene therapy](https://www.yanyin.tech/solutions/gene-therapy-industry-solutions)
+- [Antibody / protein](https://www.yanyin.tech/solutions/antibody-protein-industry-solutions)
+- [Synthetic biology](https://www.yanyin.tech/solutions/synthetic-biology-solutions)
+
+## API artifacts (API Evangelist enrichment)
+- [Authentication profile](authentication/yanyin-authentication.yml): API Key + OAuth2 client credentials
+- [API conventions](conventions/yanyin-conventions.yml): auth, idempotency, request signing, rate limiting, versioning
+- [Webhooks](asyncapi/yanyin-webhooks.yml): HMAC-signed callbacks with retry and replay
+- [Conformance & certifications](conformance/yanyin-conformance.yml): ISO 9001/27001/20000, MLPS L3
+- [Domain security probe](security/yanyin-domain-security.yml)
+
+## Company
+- [Company](https://www.yanyin.tech/company): about, contact, certifications
+- [Pricing](https://www.yanyin.tech/price)
+- [Privacy](https://www.yanyin.tech/privacy)
+- [News](https://www.yanyin.tech/news)
+- Developer console (login): https://app.yanyin.tech/login
+- Contact: service@yanyin.tech / +86-021-58598351 / Shanghai Zhangjiang
