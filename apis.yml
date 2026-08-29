@@ -14,6 +14,17 @@ description: >-
   companies, 280+ research institutions and hospitals, and 430+ universities,
   and holds ISO 9001, ISO 27001 and ISO 20000 certifications plus China MLPS
   Level 3. Backed by Qiming Venture Partners.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
